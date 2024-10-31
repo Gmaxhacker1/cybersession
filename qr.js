@@ -62,7 +62,7 @@ router.get('/', async (req, res) => {
 *_Qr Code By Gmax Tech_*
 *_Made With 🤍_*
 ______________________________________
-*_Pair Code Connected by Venocyber Tech_*
+*_Pair Code Connected by Gmax Tech_*
 *_Made With 🤍_*
 ______________________________________
 ╔════◇
