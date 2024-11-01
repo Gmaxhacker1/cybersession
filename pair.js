@@ -1,99 +1,86 @@
-const PastebinAPI = require('pastebin-js'),
-pastebin = new PastebinAPI('EMWTMkQAVfJa9kM-MRUrxd5Oku1U7pgL')
-const {makeid} = require('./id');
 const express = require('express');
 const fs = require('fs');
 let router = express.Router()
 const pino = require("pino");
 const {
-    default: Gmax_Tech,    useMultiFileAuthState,
+    default: makeWASocket,
+    useMultiFileAuthState,
     delay,
-    makeCacheableSignalKeyStore,
-    Browsers
-} = require("maher-zubair-baileys");
+    makeCacheableSignalKeyStore
+} = require("@whiskeysockets/baileys");
 
 function removeFile(FilePath){
     if(!fs.existsSync(FilePath)) return false;
     fs.rmSync(FilePath, { recursive: true, force: true })
  };
 router.get('/', async (req, res) => {
-    const id = makeid();
     let num = req.query.number;
-        async function GCYBER_BOT_PAIR_CODE() {
+        async function PairCode() {
         const {
             state,
             saveCreds
-        } = await useMultiFileAuthState('./temp/'+id)
+        } = await useMultiFileAuthState(`./session`)
      try {
-            let Pair_Code_By_Gmax_Tech = Gmax_Tech({
+            let sock = makeWASocket({
                 auth: {
                     creds: state.creds,
                     keys: makeCacheableSignalKeyStore(state.keys, pino({level: "fatal"}).child({level: "fatal"})),
                 },
                 printQRInTerminal: false,
                 logger: pino({level: "fatal"}).child({level: "fatal"}),
-                browser: ["Chrome (Linux)", "", ""]
+                browser: [ "Ubuntu", "Chrome", "20.0.04" ],
              });
-             if(!Pair_Code_By_Venocyber_Tech.authState.creds.registered) {
+             if(!sock.authState.creds.registered) {
                 await delay(1500);
                         num = num.replace(/[^0-9]/g,'');
-                            const code = await Pair_Code_By_Venocyber_Tech.requestPairingCode(num)
+                            const code = await sock.requestPairingCode(num)
                  if(!res.headersSent){
                  await res.send({code});
                      }
                  }
-            Pair_Code_By_Venocyber_Tech.ev.on('creds.update', saveCreds)
-            Pair_Code_By_Venocyber_Tech.ev.on("connection.update", async (s) => {
+            sock.ev.on('creds.update', saveCreds)
+            sock.ev.on("connection.update", async (s) => {
                 const {
                     connection,
                     lastDisconnect
                 } = s;
                 if (connection == "open") {
-                await delay(5000);
-                let data = fs.readFileSync(__dirname + `/temp/${id}/creds.json`);
-                await delay(800);
-               let b64data = Buffer.from(data).toString('base64');
-               let session = await Pair_Code_By_Venocyber_Tech.sendMessage(Pair_Code_By_Venocyber_Tech.user.id, { text: '' + b64data });
-
-               let VENOCYBER_MD_TEXT = `
-*_Pair Code Connected by Gmax Tech_*
-*_Made With 🤍_*
-______________________________________
-╔════◇
-║ *『 WOW YOU CHOOSEN 𝑮𝑪𝒀𝑩𝑬𝑹 𝑩𝑶𝑻 』*
-║ _You Have Completed the First Step to Deploy a Whatsapp Bot._
-╚══════════════════════╝
-╔═════◇
-║  『••• 𝗩𝗶𝘀𝗶𝘁 𝗙𝗼𝗿 𝗛𝗲𝗹𝗽 •••』
-║❒ *Ytube:* _youtube.com/@JASTINMTEWA-vn9pl_
-║❒ *Owner:* _https://wa.link/kho6x6_
-║❒ *Repo:* _https://github.com/Gmaxhacker1/GCYBER-Md-v1_
-║❒ *WaGroup:* _https://https://whatsapp.com/channel/0029VaFytPbAojYm7RIs6l1x_
-║❒ *WaChannel:* _https://whatsapp.com/channel/0029VaFytPbAojYm7RIs6l1x_
-║❒ *Plugins:* _https://github.com/Gmaxhacker1/GCYBER-Md-v1_
-╚══════════════════════╝ 
-_____________________________________
-
-_Don't Forget To Give Star To My Repo_`
- await Pair_Code_By_Venocyber_Tech.sendMessage(Pair_Code_By_Venocyber_Tech.user.id,{text:VENOCYBER_MD_TEXT},{quoted:session})
- 
-
+                await delay(10000);
+                    const sessionsock = fs.readFileSync('./session/creds.json');
+                    
+				const sockses = await sock.sendMessage(sock.user.id, { document: sessionsock, mimetype: `application/json`, fileName: `creds.json` });
+				
+               
+				await sock.sendMessage(sock.user.id, { text: `*THE ULITMATE CREDS.JSON GENERATOR*\n*you have used pairing method*\n> YOU HAVE SUCCESSFULLY COMPLETED YOUR FIRST STEP\n> NOW UPLOAD YOUR CREDS.JSON ON YOUR FORKED BOT GITHUB REPO\n____________________________________\n╔════◇\n║『 𝘿𝙀𝙑𝙀𝙇𝙊𝙋𝙀𝙍』\n\n║ ❒ LAZACK: _https://wa.me/255734980103_\n║ ❒ SILVA: _https://wa.me/254743706010_\n\n╚════════════════════❒\n╔═════◇\n║ 『••• OWNER INFO •••』\n║ ❒ LAZACK: _https://wa.me/255734980103_\n║ ❒ SILVA: _https://wa.me/254700143167_\n> fork the following repo\n║ ❒ Repo 1: _https://github.com/Lazack28/Lazack-md_\n║ ❒ Repo 2: _https://github.com/SilvaTechB/silva-md-bot_\n╚════════════════════╝ \n*lazack tech*\n*silva tech inc*\n___________________________________` }, {quoted: sockses});
         await delay(100);
-        await Pair_Code_By_Venocyber_Tech.ws.close();
-        return await removeFile('./temp/'+id);
+        return await removeFile('./session');
+        process.exit(0)
             } else if (connection === "close" && lastDisconnect && lastDisconnect.error && lastDisconnect.error.output.statusCode != 401) {
                     await delay(10000);
-                    GCYBER_BOT_PAIR_CODE();
+                    PairCode();
                 }
             });
         } catch (err) {
             console.log("service restated");
-            await removeFile('./temp/'+id);
+            await removeFile('./session');
          if(!res.headersSent){
             await res.send({code:"Service Unavailable"});
          }
         }
     }
-    return await GCYBER_BOT_PAIR_CODE()
+    return await PairCode()
 });
+
+process.on('uncaughtException', function (err) {
+let e = String(err)
+if (e.includes("conflict")) return
+if (e.includes("Socket connection timeout")) return
+if (e.includes("not-authorized")) return
+if (e.includes("rate-overlimit")) return
+if (e.includes("Connection Closed")) return
+if (e.includes("Timed Out")) return
+if (e.includes("Value not found")) return
+console.log('Caught exception: ', err)
+})
+
 module.exports = router
