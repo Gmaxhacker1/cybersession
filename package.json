@@ -1,34 +1,25 @@
 {
-  "name": "Gmax Tech",
-  "version": "1.0.0",
-  "description": "whatsapp pair code generator by Gmax and Lazack",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "description": "qr",
+    "main": "./index.js",
+  "engines" : { 
+    "npm" : ">=9.7.2",
+    "node" : ">=20.0.0"
+    },
+    "scripts": {
     "start": "node index.js"
   },
-  "keywords": [
-    "baileys",
-    "code-pairing"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/rizzlogy/zyypairing.git"
-  },
-  "author": "RizzyFuzz",
-  "license": "ISC",
+  "author": "GmaxTech",
+  "license": "MIT license",
   "dependencies": {
-    "@adiwajshing/keyed-db": "^0.2.4",
-    "@colors/colors": "1.5.0",
-    "@whiskeysockets/baileys": "^6.4.0",
-    "cfonts": "~2.10.0",
-    "chalk": "~4.1.0",
-    "fs-extra": "^11.1.1",
-    "path": "^0.12.7",
-    "pino": "^8.1.0"
-  },
-  "bugs": {
-    "url": "https://github.com/rizzlogy/zyypairing/issues"
-  },
-  "homepage": "https://github.com/rizzlogy/zyypairing#readme"
+    "@whiskeysockets/baileys": "^6.5.0",
+    "maher-zubair-baileys": "^6.6.5",
+    "qrcode": "^1.5.3",
+    "awesome-phonenumber": "^2.64.0",
+    "pino": "^8.1.0",
+    "phone" : "3.1.30",
+    "body-parser": "^1.20.1",
+    "pastebin-js": "^1.0.6",
+    "express": "^4.18.1",
+    "path": "^0.12.7"
+   }
 }
