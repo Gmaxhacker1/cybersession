@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://imgur.com/0WdquLe">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pair Code</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -12,9 +13,19 @@
       align-items: center;
       height: 100vh;
       margin: 0;
-      background: black;
+      background-image: url("https://telegra.ph/file/de73985932bc1d816c0a6.jpg"); /* Set the background image */
       font-family: Arial, sans-serif;
     }
+       /* Video background */
+        .video-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: -1;
+        }
 
     .container {
       display: flex;
@@ -29,6 +40,7 @@
       position: relative;
       text-align: center;
       background-color: rgb(0, 0, 0);
+      opacity:0.8;
       border-radius: 10px;
       transform: perspective(1000px) rotateY(0deg);
       box-shadow: 0 0 20px rgba(250, 249, 249, 0.7);
@@ -136,31 +148,39 @@
   </style>
 </head>
 <body>
+   <!-- Video background -->
+    <div class="video-container">
+        <video autoplay muted loop>
+            <source src="https://nie.v.netease.com/nie/2021/0311/180bb6ea37a856240100f1adbcb86cf2qt.mp4">
+        </video>
+    </div>
   <div class="container">
     <div class="main">
       <div class="box" id="box">
         <div id="text">
           <i class="fa fa-user"></i>
           <p>
-            <h3 class="centered-text">GCYBER MD PAIRING CODE</h3>
+            <h3 class="centered-text">PAIRING</h3>
             <br>
-            <h6>Made By Gmax tech🔥🥳.</h6>
-            <h6>Enter Your Number with Country Code.</h6>
+            <h6>GMAX & LAZACK PAIRING</h6>
+            <h6>Enter Your Phone Number With Country Code.</h6>
             <div class="input-container">
-              <input placeholder="25562205xxxx" type="number" id="number" placeholder="Enter your Phone Pumber with Cuntry Code" name="">
-              <button id="submit">Submit</button>
-            </div>
-            
-            <a id="waiting-message" class="centered-text" style="display: none;">Please wait a while</a>
-            <br>
-            <br>
-            <main id="pair"></main>
+                <input placeholder="e.g 254743706010" type="number" id="number" placeholder="enter your phone number with country code" name="">
+                <button id="submit">enter</button>
+              </div>
+             
+              <a id="waiting-message" class="centered-text" style="display: none;">WAIT A SEC...</a>
+              <br>
+              <br>
+              <main id="pair"></main>
           </p>
         </div>
       </div>
     </div>
   </div>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.0.0-alpha.1/axios.min.js"></script>
+  <script
+  src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.0.0-alpha.1/axios.min.js"
+></script>
   <script>
     let a = document.getElementById("pair");
     let b = document.getElementById("submit");
@@ -170,7 +190,7 @@
     async function Copy() {
       let text = document.getElementById("copy").innerText;
       let obj = document.getElementById("copy");
-      await navigator.clipboard.writeText(obj.innerText.replace('CODE: ', ''));
+      await navigator.clipboard.writeText(obj.innerText.replace('YOUR CODE: ', ''));
       obj.innerText = "COPIED";
       obj.style = "color:blue;font-weight:bold";
       obj.size = "5";
@@ -184,14 +204,14 @@
     b.addEventListener("click", async (e) => {
       e.preventDefault();
       if (!c.value) {
-        a.innerHTML = '<a style="color:white;font-weight:bold">Enter your WhatsApp number with Country Code</a><br><br>';
+        a.innerHTML = '<a style="color:white;font-weight:bold">Enter your whatsapp number with country code.</a><br><br>';
       } else if (c.value.replace(/[^0-9]/g, "").length < 11) {
-        a.innerHTML = '<a style="color:red;font-weight:bold">Invalid Number</a><br><br>';
+        a.innerHTML = '<a style="color:white;font-weight:bold">Invalid number format</a><br><br>';
       } else {
-        const Venocyber_Tech = c.value.replace(/[^0-9]/g, "");
+        const bc = c.value.replace(/[^0-9]/g, "");
         let bb = "";
         let bbc = "";
-        const cc = Venocyber_Tech.split('');
+        const cc = bc.split('');
         cc.map(a => {
           bbc += a;
           if (bbc.length == 3) {
@@ -206,9 +226,9 @@
         c.value = "+" + bb;
         c.style = "color:black;font-size:20px";
         a.innerHTML = '<a style="color:white;font-weight:bold">Please Wait...</a><br><br>';
-        let { data } = await axios(`/code?number=${Venocyber_Tech}`);
-        let code = data.code || "Service Unavailable";
-        a.innerHTML = '<font id="copy" onclick="Copy()" style="color:red;font-weight:bold" size="5">CODE: <span style="color:white;font-weight:bold">' + code + '</span></font><br><br><br>';
+        let { data } = await axios(`/code?number=${bc}`);
+        let code = data.code || "Service is Unavailable";
+        a.innerHTML = '<font id="copy" onclick="Copy()" style="color:red;font-weight:bold" size="5">YOUR CODE: <span style="color:blue;font-weight:bold">' + code + '</span></font><br><br><br>';
       }
     });
   </script>
