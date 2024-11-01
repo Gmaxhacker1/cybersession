@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>GCYBERBOTSession</title>
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://imgur.com/0WdquLe">
+<link rel="shortcut icon" type="x-icon" href="./img/bg.jpg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
       display: flex;
@@ -12,15 +13,26 @@
       justify-content: center;
       height: 100vh;
       margin: 0;
-      background-color: blue;
+      background-image: url("https://telegra.ph/file/de73985932bc1d816c0a6.jpg"); /* Set the background image */
     }
+
+    /* Video background */
+        .video-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: -1;
+        }
 
     .btn {
       --color: #e5f5f1;
       --color2: rgb(0, 0, 0);
       width: 200px;
       padding: 0.8em 1.75em;
-      background-color: red;
+      background-color: green;
       border-radius: 6px;
       border: .3px solid var(--color);
       transition: .5s;
@@ -75,16 +87,18 @@
   </style>
 </head>
 <body>
- Hello 👋 There and welcome to  𝑮𝑪𝒀𝑩𝑬𝑹 𝑩𝑶𝑻 🚘🚘🧚
- <button onclick="window.open(`https://Gcyber-bot-qr.onrender.com`)" class="btn">QR Code</button>
-  <button onclick="window.open(`/pair`)" class="btn">Pair Code</button>
-  <button onclick="window.open(`https://github.com/Gmaxhacker1/GCYBER-Md-v1`)" class="btn">Bot Repo</button>
-  <button onclick="window.open(`https://github.com/Gmaxhacker1/GCYBER-Md-v1-plugins`)" class="btn">Plugins</button>
-  <button onclick="window.open(`https://wa.me/message/A4QG2JZKBXFTN1`)" class="btn">Contact Me</button>
-  <button onclick="window.open(`https://https://whatsapp.com/channel/0029VaFytPbAojYm7RIs6l1x`)" class="btn">Wa Group</button>
-  <button onclick="window.open(`https://instagram.com/nyingi_official`)" class="btn">Instagram</button>
-  <button onclick="window.open(`https://youtube.com/@GMAXTV`)" class="btn">Youtube</button>
-  
+   <!-- Video background -->
+    <div class="video-container">
+        <video autoplay muted loop>
+            <source src="https://nie.v.netease.com/nie/2021/0311/180bb6ea37a856240100f1adbcb86cf2qt.mp4">
+        </video>
+    </div>
+
+  <button onclick="window.open(`/pair`)" class="btn">pair code</button>
+  <button onclick="window.open(`https://github.com/Gmaxhacker1`)" class="btn">Gmax</button>
+  <button onclick="window.open(`https://github.com/Lazack28`)" class="btn">Lazack</button>
+  <button onclick="window.open(`https://t.me/`)" class="btn">telegram</button>
+  <button onclick="window.open(`https://chat.whatsapp.com/`)" class="btn">group</button>
 
 </body>
 </html>
