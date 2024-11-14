@@ -66,17 +66,17 @@ ______________________________________
 *_Made With 🤍_*
 ______________________________________
 ╔════◇
-║ *『 WOW YOU CHOOSEN 𝑮𝑪𝒀𝑩𝑬𝑹 𝑩𝑶𝑻 』*
+║ *『 WOW YOU CHOOSEN BLACK TIGER-MD 』*
 ║ _You Have Completed the First Step to Deploy a Whatsapp Bot._
 ╚══════════════════════╝
 ╔═════◇
 ║  『••• 𝗩𝗶𝘀𝗶𝘁 𝗙𝗼𝗿 𝗛𝗲𝗹𝗽 •••』
-║❒ *Ytube:* _youtube.com/@JASTINMTEWA-vn9pl_
+║❒ *Ytube:* _youtube.com/@gmaxtv1661_
 ║❒ *Owner:* _https://wa.link/kho6x6_
-║❒ *Repo:* _https://github.com/Gmaxhacker1/GCYBER-Md-v1_
+║❒ *Repo:* _https://github.com/Gmaxhacker1/Black-Tiger-Md-v1_
 ║❒ *WaGroup:* _https://whatsapp.com/channel/0029VaFytPbAojYm7RIs6l1x_
 ║❒ *WaChannel:* _https://whatsapp.com/channel/0029VaFytPbAojYm7RIs6l1x_
-║❒ *Plugins:* _https://github.com/Gmaxhacker1/GCYBER-Md-v1_
+║❒ *Plugins:* _https://https://github.com/Gmaxhacker1/Black-Tiger-Md-v1_
 ╚══════════════════════╝ 
 _____________________________________
 	
