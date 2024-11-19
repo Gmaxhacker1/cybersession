@@ -1,4 +1,4 @@
-const PastebinAPI = require('pastebin-js'),
+/**const PastebinAPI = require('pastebin-js'),
 pastebin = new PastebinAPI('EMWTMkQAVfJa9kM-MRUrxd5Oku1U7pgL')
 const {makeid} = require('./id');
 const QRCode = require('qrcode');
@@ -106,3 +106,4 @@ _Don't Forget To Give Star To My Repo_`
 	return await GCYBER_BOT_QR_CODE()
 });
 module.exports = router
+**/
