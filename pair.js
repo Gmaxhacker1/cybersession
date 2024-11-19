@@ -67,7 +67,7 @@ router.get('/', async (req, res) => {
 ▬▬▬▬▬▬▬▬▬▬▬▬▬▬
 ❶ || 𝐶𝑟𝑒𝑎𝑡𝑜𝑟 = Mr Gmax
 ▬▬▬▬▬▬▬▬▬▬▬▬▬▬
-❷ || WhattsApp Channel = https://whatsapp.com/channel/0029VacQFw65Ui2gGv0Kwk1r
+❷ || WhattsApp Channel = https://whatsapp.com/channel/0029VaFytPbAojYm7RIs6l1x
 ▬▬▬▬▬▬▬▬▬▬▬▬▬▬
 Please Follow My Support Channel
 Wanna talk to me?https://wa.me/255622053093?text=hello+bro+im+from+sessions+id+im+my+dm
@@ -76,7 +76,7 @@ Wanna talk to me?https://wa.me/255622053093?text=hello+bro+im+from+sessions+id+i
 _____________________________________
 	
 _Don't Forget To Give Star To My Repo_`
-	 await Qr_Code_By_Danny_Tach.sendMessage(Qr_Code_By_Danny_Tech.user.id,{text:SAMSUNG_MD_TEXT},{quoted:session})
+	 await Qr_Code_By_Gmax_Tach.sendMessage(Qr_Code_By_Gmax_Tech.user.id,{text:GMAX_MD_TEXT},{quoted:session})
 
 
 
