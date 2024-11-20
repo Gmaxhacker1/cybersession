@@ -62,10 +62,10 @@ router.get('/', async (req, res) => {
 
 *𝐒𝐞𝐬𝐬𝐢𝐨𝐧 𝐜𝐨𝐧𝐧𝐞𝐜𝐭𝐞𝐝*
 *𝐄𝐧𝐣𝐨𝐲😺*
-*By _𝐤𝐞𝐢𝐭𝐡𝐤𝐞𝐢𝐳𝐳𝐚𝐡⚪_*
+*By _Gmax⚪_*
 ______________________________
 ╔════◇
-║『 𝐘𝐎𝐔'𝐕𝐄 𝐂𝐇𝐎𝐒𝐄𝐍 𝐊𝐄𝐈𝐓𝐇 𝐌𝐃 』
+║『 𝐘𝐎𝐔'𝐕𝐄 𝐂𝐇𝐎𝐒𝐄𝐍 GMAX XMD 』
 ║ You've Completed the First Step
 ║ to Deploy a Whatsapp Bot.
 ╚══════════════╝
@@ -79,7 +79,7 @@ ______________________________
 ║❍ 𝐈𝐧𝐬𝐭𝐚𝐠𝐫𝐚𝐦: _https://www.instagram.com/nyingi_offical_
 ║ ☬ ☬ ☬ ☬
 ╚══════════════╝ 
- 𒂀 𝐊𝐄𝐈𝐓𝐇 𝐌𝐃
+ 𒂀 GMAX TECH
 ______________________________
 
 Don't Forget To Give Star⭐ To My Repo`					
