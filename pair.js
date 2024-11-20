@@ -72,8 +72,8 @@ ______________________________
 ║❍ 𝐘𝐨𝐮𝐭𝐮𝐛𝐞: _youtube.com/@Gmaxtv1661_
 ║❍ 𝐎𝐰𝐧𝐞𝐫: _https://wa.me/255622053093_
 ║❍ 𝐑𝐞𝐩𝐨: _https://github.com/Gmaxhacker1/GMAX-XMD_
-║❍ 𝐖𝐚𝐆𝐫𝐨𝐮𝐩: _https://chat.whatsapp.com/GvR2YEfyhQQF85jp1rCLNn_
-║❍ 𝐖𝐚𝐂𝐡𝐚𝐧𝐧𝐞𝐥: _https://whatsapp.com/channel/0029Vaan9TF9Bb62l8wpoD47_
+║❍ 𝐖𝐚𝐆𝐫𝐨𝐮𝐩: _ _
+║❍ 𝐖𝐚𝐂𝐡𝐚𝐧𝐧𝐞𝐥: _https://whatsapp.com/channel/0029VaFytPbAojYm7RIs6l1x_
 ║❍ 𝐈𝐧𝐬𝐭𝐚𝐠𝐫𝐚𝐦: _https://www.instagram.com/nyingi_official_
 ║ ☬ ☬ ☬ ☬
 ╚══════════════╝ 
